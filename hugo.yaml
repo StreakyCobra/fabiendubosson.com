@@ -1,0 +1,43 @@
+baseURL: "https://fabiendubosson.com"
+title: "Fabien Dubosson"
+languageCode: "en"
+
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: "Blog"
+      pageRef: "/blog"
+      weight: 2
+    - name: "About"
+      pageRef: "/about"
+      weight: 3
+    - name: "Search"
+      weight: 4
+      params:
+        type: "search"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author:
+    name: Fabien Dubosson
+    email: fabien.dubosson@gmail.com
+    image: /images/fabiendubosson.500.jpg
+    link: /blog
+
+  page:
+    width: wide
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: false
+
+  blog:
+    list:
+      displayTags: true
