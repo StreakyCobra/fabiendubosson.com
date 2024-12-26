@@ -26,22 +26,23 @@
           </a>
         {{- end -}}
 
+
+        {{- $seeAllBlogPosts := (T "seeAllBlogPosts") | default "See all blog posts →" -}}
+        {{- if gt (len (where .Site.RegularPages "Type" "eq" $blogSection)) $recentPostsCount -}}
+          <a class="hx-ml-4 hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
+            {{- $seeAllBlogPosts -}}
+          </a>
+        {{- end -}}
+
         {{- range $blogPages }}
           <div class="hx-mb-4">
             {{ partial "shortcodes/card" (dict
-              "title" (print .Title " →")
+              "title" .Title
               "subtitle" (.Summary | plainify | htmlUnescape)
               "link" .RelPermalink
               "date" .Date
             ) }}
           </div>
-        {{- end -}}
-
-        {{- $seeAllBlogPosts := (T "seeAllBlogPosts") | default "See all blog posts →" -}}
-        {{- if gt (len (where .Site.RegularPages "Type" "eq" $blogSection)) $recentPostsCount -}}
-          <a class="hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
-            {{- $seeAllBlogPosts -}}
-          </a>
         {{- end -}}
 
       </main>
