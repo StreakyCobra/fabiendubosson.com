@@ -29,7 +29,6 @@ params:
     name: Fabien Dubosson
     email: fabien.dubosson@gmail.com
     image: /images/fabiendubosson.500.jpg
-    link: /blog
 
   page:
     width: wide
