@@ -28,7 +28,7 @@ params:
   author:
     name: Fabien Dubosson
     email: fabien.dubosson@gmail.com
-    image: /images/fabiendubosson.500.jpg
+    image: /images/fabiendubosson.jpg
 
   page:
     width: wide
@@ -47,6 +47,6 @@ params:
 
   navbar:
     logo:
-      path: /images/logo.svg
-      dark: /images/logo-dark.svg
+      path: /images/fabiendubosson.jpg
+      dark: /images/fabiendubosson.jpg
       link: /

@@ -35,4 +35,4 @@ In my free time, I enjoy running trails in the mountains, especially the long an
 
 <br />
 
-<img src="/images/fabiendubosson.1200.jpg" alt="Picture of Fabien" style="width:200px; border-radius:9999px; margin-top: 2em;"/>
+<img src="/images/fabiendubosson.jpg" alt="Picture of Fabien" style="width:256px; border-radius:9999px; margin-top: 2em;"/>
