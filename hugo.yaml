@@ -41,4 +41,6 @@ params:
     list:
       displayTags: true
 
-  blogSection: blog
+  custom:
+    blogSection: blog
+    recentPostsCount: 3

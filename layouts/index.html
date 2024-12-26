@@ -9,7 +9,10 @@
           {{ .Content }}
         </div>
 
-        {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse.Limit 3) "Type" "eq" site.Params.blogSection -}}
+        {{- $blogSection := site.Params.blogSection | default "blog" -}}
+        {{- $recentPostsCount := .Site.Params.custom.recentPostsCount | default 3 -}}
+
+        {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse.Limit $recentPostsCount) "Type" "eq" $blogSection -}}
         {{- if $blogPages -}}
           <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
         {{- end -}}
@@ -24,6 +27,13 @@
             ) }}
           </div>
         {{ end -}}
+
+        {{- $seeAllPosts := (T "seeAllPosts") | default "See all posts →" -}}
+        {{- if gt (len (where .Site.RegularPages "Type" "eq" $blogSection)) $recentPostsCount -}}
+          <a class="hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
+            {{- $seeAllPosts -}}
+          </a>
+        {{- end -}}
 
       </main>
     </article>
