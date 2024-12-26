@@ -44,3 +44,9 @@ params:
   custom:
     blogSection: blog
     recentPostsCount: 3
+
+  navbar:
+    logo:
+      path: /images/logo.svg
+      dark: /images/logo-dark.svg
+      link: /
