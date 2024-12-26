@@ -15,7 +15,14 @@
         {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse.Limit $recentPostsCount) "Type" "eq" $blogSection -}}
         {{- if $blogPages -}}
           <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
+
+          {{- $rssIcon := partial "utils/icon" (dict "name" "rss" "attributes" "height=14") -}}
+          <a href="{{ $blogSection }}/index.xml"
+            class="not-prose hx-inline-flex hx-items-center hx-rounded-full hx-gap-2 hx-mb-4 hx-px-3 hx-py-1 hx-text-xs hx-text-gray-600 dark:hx-text-gray-400 hx-bg-gray-100 dark:hx-bg-neutral-800 dark:hx-border-neutral-800 hx-border hover:hx-border-gray-400 dark:hover:hx-text-gray-50 dark:hover:hx-border-gray-600 hx-transition-all hx-ease-in hx-duration-200">
+            {{ $rssIcon }} Blog RSS Feed
+          </a>
         {{- end -}}
+
         {{- range $blogPages }}
           <div class="hx-mb-4">
             {{ partial "shortcodes/card" (dict
@@ -26,7 +33,7 @@
               "date" .Date
             ) }}
           </div>
-        {{ end -}}
+        {{- end -}}
 
         {{- $seeAllPosts := (T "seeAllPosts") | default "See all posts →" -}}
         {{- if gt (len (where .Site.RegularPages "Type" "eq" $blogSection)) $recentPostsCount -}}
