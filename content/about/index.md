@@ -13,22 +13,22 @@ In my free time, I enjoy running trails in the mountains, especially the long an
 
 <br />
 
-{{< hextra/hero-badge link="mailto:fabien.dubosson@gmail.com" >}}
+{{< hextra/hero-badge link="mailto:fabien.dubosson@gmail.com" class="hx-mr-1 hx-mb-2" >}}
   <span>Email</span>
   {{< icon name="mail" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
-&nbsp;
-{{< hextra/hero-badge link="https://github.com/StreakyCobra" >}}
+
+{{< hextra/hero-badge link="https://github.com/StreakyCobra" class="hx-mr-1 hx-mb-2" >}}
   <span>GitHub</span>
   {{< icon name="github" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
-&nbsp;
-{{< hextra/hero-badge link="https://www.linkedin.com/in/fabiendubosson" >}}
+
+{{< hextra/hero-badge link="https://www.linkedin.com/in/fabiendubosson" class="hx-mr-1 hx-mb-2" >}}
   <span>LinkedIn</span>
   {{< icon name="linkedin" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
-&nbsp;
-{{< hextra/hero-badge link="https://bsky.app/profile/fabiendubosson.bsky.social" >}}
+
+{{< hextra/hero-badge link="https://bsky.app/profile/fabiendubosson.bsky.social" class="hx-mr-1 hx-mb-2" >}}
   <span>Bluesky</span>
   {{< icon name="bluesky" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
