@@ -1,4 +1,5 @@
 ---
+title: Home
 description: Website and blog of Fabien Dubosson
 ---
 
