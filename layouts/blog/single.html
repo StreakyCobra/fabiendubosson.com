@@ -36,7 +36,8 @@
         {{- end -}}
         {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
         {{- if $minutesRead }}
-            <span class="hx-mx-1">·</span>{{ $minutesRead }}
+            <span class="hx-mx-1">·</span>
+            <span class="hx-mx-1">{{ $minutesRead }}</span>
         {{- end -}}
     </div>
     <div class="content">
