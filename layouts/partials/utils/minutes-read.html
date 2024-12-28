@@ -1,0 +1,21 @@
+{{- $page := .page -}}
+
+{{- $readingTimeMinutes := $page.ReadingTime -}}
+
+{{- $readingTimeSuffix := "" -}}
+
+{{- if eq $readingTimeMinutes 1 -}}
+  {{- $readingTimeSuffix = (T "minuteRead") | default "%d minute read" -}}
+{{- else -}}
+  {{- $readingTimeSuffix = (T "minutesRead") | default "%d minutes read" -}}
+{{- end -}}
+
+{{- $readingTime := "" -}}
+
+{{- if gt $readingTimeMinutes 0 -}}
+  {{- $readingTime = printf $readingTimeSuffix $readingTimeMinutes -}}
+{{- else -}}
+  {{- $readingTime = "" -}}
+{{- end -}}
+
+{{- return $readingTime -}}

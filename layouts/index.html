@@ -35,10 +35,12 @@
         {{- end -}}
 
         {{- range $blogPages }}
+          {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
           <div class="hx-mb-4">
             {{ partial "shortcodes/card" (dict
               "title" .Title
               "subtitle" (.Summary | plainify | htmlUnescape)
+              "tag" $minutesRead
               "link" .RelPermalink
               "date" .Date
             ) }}
