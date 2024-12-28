@@ -1,6 +1,5 @@
 ---
 title: 'About'
-toc: false
 ---
 
 Hi, I’m Fabien, a software developer and data engineer, navigating the world of code and data from the stunning mountains of Switzerland 🇨🇭.
