@@ -15,8 +15,9 @@
         {{- $blogSection := site.Params.blogSection | default "blog" -}}
         {{- $recentPostsCount := .Site.Params.custom.recentPostsCount | default 3 -}}
 
-        {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse.Limit $recentPostsCount) "Type" "eq" $blogSection -}}
-        {{- if $blogPages -}}
+        {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse) "Type" "eq" $blogSection -}}
+        {{- $recentBlogPages := $blogPages.Limit $recentPostsCount -}}
+        {{- if $recentBlogPages -}}
           <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-12 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
 
           {{- $rssIcon := partial "utils/icon" (dict "name" "rss" "attributes" "height=14") -}}
@@ -28,13 +29,13 @@
 
 
         {{- $seeAllBlogPosts := (T "seeAllBlogPosts") | default "See all blog posts →" -}}
-        {{- if gt (len (where .Site.RegularPages "Type" "eq" $blogSection)) $recentPostsCount -}}
+        {{- if gt (len $blogPages) $recentPostsCount -}}
           <a class="hx-ml-4 hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
             {{- $seeAllBlogPosts -}}
           </a>
         {{- end -}}
 
-        {{- range $blogPages }}
+        {{- range $recentBlogPages }}
           {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
           <div class="hx-mb-4">
             {{ partial "shortcodes/card" (dict
