@@ -3,13 +3,15 @@ title: 'About'
 toc: false
 ---
 
-Hi, I’m Fabien, a software developer and data engineer working remotely from the mountains of Switzerland 🇨🇭.
+Hi, I’m Fabien, a software developer and data engineer, navigating the world of code and data from the stunning mountains of Switzerland 🇨🇭.
 
-After earning a master’s degree in computer science, I spent a few years in academia before joining a startup that perfectly aligned with my interest in sustainable mobility. It was somewhat by chance that I ventured into data engineering there, but it is through passion that I ultimately specialized in the field, while growing with the company and developing individual contributor (IC) leadership skills.
+After earning a master’s degree in computer science, I spent a few years in academia before joining a startup that perfectly aligned with my interest in sustainable mobility. My curiosity and drive led me to data engineering, where I discovered a passion that has shaped my career. Over time, I grew with the company, developing leadership skills as an individual contributor, with a focus on enabling people and driving technical excellence.
 
 While my primary focus is on data engineering, I’ve maintained a strong curiosity for everything related to computers and software development. Whether it’s Spacemacs, Rust, Fedora Atomic, git internals, or anything else that sparks my intellectual curiosity, I’m always eager to learn.
 
 In my free time, I enjoy running trails in the mountains, especially the long and challenging ones. I also love travelling by bike, although I don’t have much time for it at the moment. So, if you’re into endurance sports or adventures, you’ve got a great conversation starter!
+
+Feel free to connect if you’re interested in data engineering, software development, or endurance sports. I’d love to chat!
 
 <br />
 
