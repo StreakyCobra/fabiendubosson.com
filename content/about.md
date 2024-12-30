@@ -10,7 +10,8 @@ While my primary focus is on data engineering, I’ve maintained a strong curios
 
 In my free time, I enjoy running trails in the mountains, especially the long and challenging ones. I also love travelling by bike, although I don’t have much time for it at the moment. So, if you’re into endurance sports or adventures, you’ve got a great conversation starter!
 
-Feel free to connect if you’re interested in data engineering, software development, or endurance sports. I’d love to chat!
+Feel free to connect, especially if you’re interested in data engineering, software development, or endurance sports. I’d love to chat!
+
 
 <br />
 
