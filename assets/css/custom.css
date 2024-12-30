@@ -1,0 +1,16 @@
+.sc-blog-entry {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  align-items: center;
+}
+
+.sc-blog-entry:not(:first-child) {
+  border-top: 1px solid rgb(75 85 99 / 30%);
+}
+
+.dark .sc-blog-entry:not(:first-child) {
+  border-top: 1px solid rgb(156 163 175 / 50%);
+}
