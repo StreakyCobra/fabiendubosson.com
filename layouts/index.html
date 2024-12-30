@@ -26,7 +26,7 @@
 
         {{- $seeAllBlogPosts := (T "seeAllBlogPosts") | default "See all blog posts →" -}}
         {{- if gt (len $blogPages) $recentPostsCount -}}
-          <a class="hx-ml-4 hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
+          <a class="hx-ml-4 hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-decoration-from-font" href="/blog/">
             {{- $seeAllBlogPosts -}}
           </a>
         {{- end -}}
