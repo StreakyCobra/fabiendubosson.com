@@ -28,7 +28,7 @@
               <span class="hx-mr-1">{{ partial "utils/format-date" .Date }}</span>
               {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
               {{- if $minutesRead }}
-                  <span class="hx-mx-1">·</span>
+                  <span class="hx-mr-1">·</span>
                   <span class="hx-ml-1">{{ $minutesRead }}</span>
               {{- end -}}
             </p>
