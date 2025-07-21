@@ -1,6 +1,8 @@
 ---
 date: '2025-01-26T21:34:05+01:00'
 title: 'Unpacking Dijkstra’s Note on “Why Numbering Should Start at Zero”'
+categories:
+  - tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'
