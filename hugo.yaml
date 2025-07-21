@@ -8,8 +8,8 @@ module:
 
 menu:
   main:
-    - name: "Blog"
-      pageRef: "/blog"
+    - name: "Tech"
+      pageRef: "/categories/tech/"
       weight: 2
     - name: "About"
       pageRef: "/about"
