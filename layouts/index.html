@@ -14,7 +14,8 @@
         {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse) "Type" "eq" $blogSection -}}
         {{- $recentBlogPages := $blogPages.Limit $recentPostsCount -}}
         {{- if $recentBlogPages -}}
-          <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-12 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
+          <hr class="hx-mt-8" />
+          <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
 
           {{- $rssIcon := partial "utils/icon" (dict "name" "rss" "attributes" "height=14") -}}
           <a href="{{ $blogSection }}/index.xml"
