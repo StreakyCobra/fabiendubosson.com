@@ -47,7 +47,7 @@ params:
 
   custom:
     blogSection: blog
-    recentPostsCount: 3
+    recentPostsCount: 10
 
   navbar:
     logo:
