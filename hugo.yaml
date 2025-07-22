@@ -8,14 +8,17 @@ module:
 
 menu:
   main:
+    - name: "Blog"
+      pageRef: "/blog/"
+      weight: 2
     - name: "Tech"
       pageRef: "/categories/tech/"
-      weight: 2
+      weight: 3
     - name: "About"
       pageRef: "/about"
-      weight: 3
-    - name: "Search"
       weight: 4
+    - name: "Search"
+      weight: 5
       params:
         type: "search"
 
