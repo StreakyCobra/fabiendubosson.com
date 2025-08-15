@@ -9,6 +9,9 @@ authors:
 summary: A personal journey through Linux webcam woes, nostalgia, and plenty of tweaking—ending with a script that finally helped me look human in meetings.
 ---
 
+> [!NOTE]
+> **Update 2025-08-15**: A colleague pointed out that automatic white balance is often unreliable when working in a wooden environment, such as a mountain cabin, which was the case for me when writing this article. Automatic white balance works much better at home or in an office environment. That said, the solutions described below remain just as useful when working in such environments.
+
 If there is one change that Linux users fear the most, it's switching to a brand new laptop. Even though hardware support is much better than when I first started 25 years ago, it is still a gamble to know if you picked one that will get all functionalities supported.
 
 If you ever tried installing Linux on a Pentium 4 with a blurry CRT, you’ll remember the joy and pain of hardware compatibility (and maybe Compiz cubes). Some things haven’t changed.
