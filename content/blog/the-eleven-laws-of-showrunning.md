@@ -6,6 +6,7 @@ categories:
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'
+toc: false
 summary: The Eleven Laws of Showrunning, a 2016 essay on television production, offers surprisingly relevant lessons for software engineering leadership and project management.
 ---
 
