@@ -1,10 +1,11 @@
 {{ define "main" }}
-  <div class='hx-mx-auto hx-flex {{ partial "utils/page-width" . }}'>
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
     {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
     {{ partial "toc.html" . }}
-    <div class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-      <div class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
-        <div class="hx-mt-8 content">
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+        {{ if .Title }}<h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">{{ .Title }}</h1>{{ end }}
+        <div class="content">
           {{ .Content }}
         </div>
 
@@ -14,11 +15,11 @@
         {{- $blogPages := where (.Site.RegularPages.ByDate.Reverse) "Type" "eq" $blogSection -}}
         {{- $recentBlogPages := $blogPages.Limit $recentPostsCount -}}
         {{- if $recentBlogPages -}}
-          <h3><a style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-mb-2 hx-text-xl " href="/blog/">Recent blog posts</a></h3>
+          <h3><a style="color: inherit; text-decoration: none;" class="hx:block hx:font-semibold hx:mt-8 hx:mb-2 hx:text-xl " href="/blog/">Recent blog posts</a></h3>
 
           {{- $rssIcon := partial "utils/icon" (dict "name" "rss" "attributes" "height=14") -}}
           <a href="{{ $blogSection }}/index.xml"
-            class="not-prose hx-inline-flex hx-items-center hx-rounded-full hx-gap-2 hx-mb-4 hx-px-3 hx-py-1 hx-text-xs hx-text-gray-600 dark:hx-text-gray-400 hx-bg-gray-100 dark:hx-bg-neutral-800 dark:hx-border-neutral-800 hx-border hover:hx-border-gray-400 dark:hover:hx-text-gray-50 dark:hover:hx-border-gray-600 hx-transition-all hx-ease-in hx-duration-200">
+            class="not-prose hx:inline-flex hx:items-center hx:rounded-full hx:gap-2 hx:mb-4 hx:px-3 hx:py-1 hx:text-xs hx:text-gray-600 dark:hx:text-gray-400 hx:bg-gray-100 dark:hx:bg-neutral-800 dark:hx:border-neutral-800 hx:border hover:hx:border-gray-400 dark:hover:hx:text-gray-50 dark:hover:hx:border-gray-600 hx:transition-all hx:ease-in hx:duration-200">
             {{ $rssIcon }} Blog RSS Feed
           </a>
         {{- end -}}
@@ -26,38 +27,38 @@
 
         {{- $seeAllBlogPosts := (T "seeAllBlogPosts") | default "See all blog posts →" -}}
 
-        <main class="hx-mb-2">
+        <main class="hx:mb-2">
           {{- range $recentBlogPages }}
             {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
             <article class="sc-blog-entry">
               <a href="{{.RelPermalink}}">{{.Title}}</a>
-              <div class="hx-text-gray-600 dark:hx-text-gray-400 hx-text-sm" datetime="{{ .Date.UTC | time.Format "2006-01-02T15:04:05Z"}}">
+              <div class="hx:text-gray-600 dark:hx:text-gray-400 hx:text-sm" datetime="{{ .Date.UTC | time.Format "2006-01-02T15:04:05Z"}}">
                 {{- if $minutesRead }}
-                  <span class="hx-mx-1">{{ $minutesRead }}</span>
-                  <span class="hx-mx-1">·</span>
+                  <span class="hx:mx-1">{{ $minutesRead }}</span>
+                  <span class="hx:mx-1">·</span>
                 {{- end -}}
-                <span class="hx-mx-1">
+                <span class="hx:mx-1">
                   {{ .Date | time.Format (site.Params.dateFormat | default ":date_long") }}
                 </span>
               </div>
-            </article>
+    </article>
           {{- end -}}
         </main>
         {{- if gt (len $blogPages) $recentPostsCount -}}
-          <a class="hx-text-[color:hsl(var(--primary-hue),100%,50%)] hx-underline hx-underline-offset-2 hx-decoration-from-font" href="/blog/">
+          <a class="hx:text-[color:hsl(var(--primary-hue),100%,50%)] hx:underline hx:underline-offset-2 hx:decoration-from-font" href="/blog/">
             {{- $seeAllBlogPosts -}}
           </a>
         {{- end -}}
 
         {{- $categories := site.Taxonomies.categories -}}
         {{- if $categories }}
-          <div class="hx-mt-8">
-            <h3 style="color: inherit; text-decoration: none;" class="hx-block hx-font-semibold hx-mt-8 hx-mb-2 hx-text-xl">Categories</h3>
-            <ul class="hx-list-disc hx-ml-4">
+          <div class="hx:mt-8">
+            <h3 style="color: inherit; text-decoration: none;" class="hx:block hx:font-semibold hx:mt-8 hx:mb-2 hx:text-xl">Categories</h3>
+            <ul class="hx:list-disc hx:ml-4">
               {{- range $name, $taxonomy := $categories }}
                 <li>
                   <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}/">
-                    {{ $name | title }} <span class="hx-text-gray-500">({{ len $taxonomy.Pages }})</span>
+                    {{ $name | title }} <span class="hx:text-gray-500">({{ len $taxonomy.Pages }})</span>
                   </a>
                 </li>
               {{- end }}

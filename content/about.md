@@ -15,22 +15,22 @@ Feel free to connect, especially if you’re interested in data engineering, sof
 
 <br />
 
-{{< hextra/hero-badge link="mailto:fabien.dubosson@gmail.com" class="hx-mr-2 hx-mb-2" >}}
+{{< hextra/hero-badge link="mailto:fabien.dubosson@gmail.com" class="hx:mr-2 hx:mb-2" >}}
   <span>Email</span>
   {{< icon name="mail" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-{{< hextra/hero-badge link="https://github.com/StreakyCobra" class="hx-mr-2 hx-mb-2" >}}
+{{< hextra/hero-badge link="https://github.com/StreakyCobra" class="hx:mr-2 hx:mb-2" >}}
   <span>GitHub</span>
   {{< icon name="github" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-{{< hextra/hero-badge link="https://www.linkedin.com/in/fabiendubosson" class="hx-mr-2 hx-mb-2" >}}
+{{< hextra/hero-badge link="https://www.linkedin.com/in/fabiendubosson" class="hx:mr-2 hx:mb-2" >}}
   <span>LinkedIn</span>
   {{< icon name="linkedin" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-{{< hextra/hero-badge link="https://bsky.app/profile/fabiendubosson.bsky.social" class="hx-mr-2 hx-mb-2" >}}
+{{< hextra/hero-badge link="https://bsky.app/profile/fabiendubosson.bsky.social" class="hx:mr-2 hx:mb-2" >}}
   <span>Bluesky</span>
   {{< icon name="bluesky" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
