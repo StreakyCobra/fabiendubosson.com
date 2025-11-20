@@ -2,16 +2,15 @@
 title: 'About'
 ---
 
-Hi, I’m Fabien, a software developer and data engineer, navigating the world of code and data from the stunning mountains of Switzerland 🇨🇭.
+Hi, I'm Fabien, a data engineer building sustainable mobility solutions from the Swiss Alps 🇨🇭.
 
-After earning a master’s degree in computer science, I spent a few years in academia before joining a startup that perfectly aligned with my interest in sustainable mobility. My curiosity and drive led me to data engineering, where I discovered a passion that has shaped my career. Over time, I grew with the company, developing leadership skills as an individual contributor, with a focus on enabling people and driving technical excellence.
+My journey started with a master's in computer science and a stint in academia before I found my place at a startup working on sustainable transportation. What began as a research engineer role evolved into a deep passion for data engineering, a field where I've spent the last several years growing both technically and as a leader. As a senior individual contributor, I focus on platform engineering, enabling teams, and driving technical excellence through mentorship and architectural decisions.
 
-While my primary focus is on data engineering, I’ve maintained a strong curiosity for everything related to computers and software development. Whether it’s Spacemacs, Rust, Fedora Atomic, git internals, or anything else that sparks my intellectual curiosity, I’m always eager to learn.
+Beyond data pipelines and infrastructure, I'm endlessly curious about the broader software ecosystem. Whether it's diving into Spacemacs configurations, exploring Rust's ownership model, experimenting with Fedora Atomic, or understanding git internals, I love learning how things work under the hood.
 
-In my free time, I enjoy running trails in the mountains, especially the long and challenging ones. I also love travelling by bike, although I don’t have much time for it at the moment. So, if you’re into endurance sports or adventures, you’ve got a great conversation starter!
+Outside of work, you'll find me on mountain trails, grinding through ultramarathons and long alpine runs. I also love bicycle touring, though my touring bags have been gathering dust lately. If you're into pushing limits through endurance sports or multi-day adventures, we'll have plenty to talk about.
 
-Feel free to connect, especially if you’re interested in data engineering, software development, or endurance sports. I’d love to chat!
-
+If you're interested in data engineering, software craftsmanship, or swapping stories about suffering through beautiful landscapes, let's connect!
 
 <br />
 
