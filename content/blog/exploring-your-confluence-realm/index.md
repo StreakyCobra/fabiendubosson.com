@@ -14,14 +14,14 @@ summary: Confluence has a concept of page ownership, but no straightforward way 
 If your company uses Atlassian products, especially Confluence, you’ve probably received an email like this at some point:
 
 <figure>
-  <img src="inbox.jpg" alt="Example email from Confluence" loading="lazy" class="image-border">
+  <img src="inbox.jpg" alt="Example email from Confluence" loading="lazy" class="sc-image-border">
   <figcaption>Example email from Confluence informing you that you have been made the owner of a page</figcaption>
 </figure>
 
 Congratulations, you’ve just been made the owner of a Confluence page. From now on, anyone viewing the page will see your name at the top:
 
 <figure>
-  <img src="header.jpg" alt="Confluence page header" loading="lazy" class="image-border" style="max-width: 500px">
+  <img src="header.jpg" alt="Confluence page header" loading="lazy" class="sc-image-border" style="max-width: 500px">
   <figcaption>Header of a Confluence page showing the owner</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Then comes the inevitable thought: “Oh no… Confluence search.” If you’ve
 Anyway, I gave it a shot:
 
 <figure>
-  <img src="search.jpg" alt="Confluence search filters" loading="lazy" class="image-border">
+  <img src="search.jpg" alt="Confluence search filters" loading="lazy" class="sc-image-border">
   <figcaption>Filters available in Confluence search</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ https://company.atlassian.net/wiki/dosearchsite.action?cql=owner %3D currentUser
 It works!
 
 <figure>
-  <img src="search-results.jpg" alt="CQL search results of pages that you own" loading="lazy" class="image-border">
+  <img src="search-results.jpg" alt="CQL search results of pages that you own" loading="lazy" class="sc-image-border">
   <figcaption>First results of a Confluence search for pages that you own using CQL</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ It shows the first 25 results of… `NaN`. It seems that indexing might not be s
 The search field is also left blank, but the query is visible in the address bar:
 
 <figure>
-  <img src="address-bar.jpg" alt="Address bar showing the query" loading="lazy" class="image-border">
+  <img src="address-bar.jpg" alt="Address bar showing the query" loading="lazy" class="sc-image-border">
   <figcaption>The query is only visible in the address bar</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ My first reaction: meh, not in the mood to deal with API keys.
 But I tried the modified URL and, to my surprise, it worked with my browser session. A clean JSON response popped up:
 
 <figure>
-  <img src="json.jpg" alt="JSON results of pages that you own" loading="lazy" class="image-border">
+  <img src="json.jpg" alt="JSON results of pages that you own" loading="lazy" class="sc-image-border">
   <figcaption>The REST API providing the pages you own in JSON format</figcaption>
 </figure>
 

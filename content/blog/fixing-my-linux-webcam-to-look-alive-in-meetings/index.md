@@ -24,7 +24,7 @@ Nowadays, the main hardware troubles on Linux come from the webcam. New generati
 After several evenings and weekend days installing and configuring Linux (sounds like a lot? May I introduce you to Arch Linux?) I finally got to the webcam test 🥁 … and it worked!
 
 <figure>
-  <img src="before.jpg" alt="Laptop's webcam on automatic white balance" loading="lazy" class="image-border">
+  <img src="before.jpg" alt="Laptop's webcam on automatic white balance" loading="lazy" class="sc-image-border">
   <figcaption>Image of the webcam with default settings, including automatic white balance</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ i_am_a_living_creature_fix_the_webcam___please() {
 We probably won't all agree on the best configuration, but I think we can all agree that this version looks much better than the default one:
 
 <figure>
-  <img src="after.jpg" alt="Laptop's webcam with custom settings" loading="lazy" class="image-border">
+  <img src="after.jpg" alt="Laptop's webcam with custom settings" loading="lazy" class="sc-image-border">
   <figcaption>Image of the webcam after fine-tuning webcam settings manually</figcaption>
 </figure>
 
