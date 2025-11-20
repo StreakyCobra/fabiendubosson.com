@@ -30,11 +30,6 @@ Feel free to connect, especially if you’re interested in data engineering, sof
   {{< icon name="linkedin" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-{{< hextra/hero-badge link="https://bsky.app/profile/fabiendubosson.bsky.social" class="hx:mr-2 hx:mb-2" >}}
-  <span>Bluesky</span>
-  {{< icon name="bluesky" attributes="height=14" >}}
-{{< /hextra/hero-badge >}}
-
 <br />
 
 <img src="/images/fabiendubosson.jpg" alt="Picture of Fabien" style="width:256px; border-radius:9999px; margin-top: 2em;"/>
