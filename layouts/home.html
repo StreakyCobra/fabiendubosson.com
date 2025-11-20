@@ -29,14 +29,9 @@
 
         <main class="hx:mb-2">
           {{- range $recentBlogPages }}
-            {{- $minutesRead := partial "utils/minutes-read" (dict "page" . ) -}}
             <article class="sc-blog-entry">
               <a href="{{.RelPermalink}}">{{.Title}}</a>
               <div class="hx:text-gray-600 dark:hx:text-gray-400 hx:text-sm" datetime="{{ .Date.UTC | time.Format "2006-01-02T15:04:05Z"}}">
-                {{- if $minutesRead }}
-                  <span class="hx:mx-1">{{ $minutesRead }}</span>
-                  <span class="hx:mx-1">·</span>
-                {{- end -}}
                 <span class="hx:mx-1">
                   {{ .Date | time.Format (site.Params.dateFormat | default ":date_long") }}
                 </span>
