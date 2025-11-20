@@ -45,22 +45,6 @@
           </a>
         {{- end -}}
 
-        {{- $categories := site.Taxonomies.categories -}}
-        {{- if $categories }}
-          <div class="hx:mt-8">
-            <h3 style="color: inherit; text-decoration: none;" class="hx:block hx:font-semibold hx:mt-8 hx:mb-2 hx:text-xl">Categories</h3>
-            <ul class="hx:list-disc hx:ml-4">
-              {{- range $name, $taxonomy := $categories }}
-                <li>
-                  <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}/">
-                    {{ $name | title }} <span class="hx:text-gray-500">({{ len $taxonomy.Pages }})</span>
-                  </a>
-                </li>
-              {{- end }}
-            </ul>
-          </div>
-        {{- end }}
-
       </main>
     </article>
   </div>

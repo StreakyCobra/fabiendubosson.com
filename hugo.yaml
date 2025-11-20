@@ -11,9 +11,6 @@ menu:
     - name: "Blog"
       pageRef: "/blog/"
       weight: 2
-    - name: "Tech"
-      pageRef: "/categories/tech/"
-      weight: 3
     - name: "About"
       pageRef: "/about"
       weight: 4

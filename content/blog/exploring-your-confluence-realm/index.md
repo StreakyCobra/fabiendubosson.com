@@ -1,8 +1,6 @@
 ---
 date: '2025-03-30T17:28:03+02:00'
 title: 'Exploring Your Confluence Realm'
-categories:
-  - tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'

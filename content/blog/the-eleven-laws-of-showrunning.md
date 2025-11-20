@@ -1,8 +1,6 @@
 ---
 date: '2025-10-15T21:25:56+02:00'
 title: 'The Eleven Laws of Showrunning'
-categories:
-  - tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'

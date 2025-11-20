@@ -1,8 +1,6 @@
 ---
 date: '2025-07-22T19:14:15+02:00'
 title: 'Finding My Blogging Flow: Lessons From Early Months'
-categories:
-  - tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'
@@ -28,3 +26,7 @@ Of course, these two pieces of conventional wisdom—“write for yourself” an
 Lowering the bar for post length will also allow me to experiment with topics beyond tech. I’ve started reorganizing the blog with content categories. For now, there’s a “Tech” category, which includes all published posts. This change will make it easier to introduce an “Adventures” category later, where I can write about outdoor and sporty endeavors. The goal isn’t to split the blog in two—some posts may fit both categories—but to let readers filter what interests them.
 
 If you’ve made it this far, thanks for reading. I hope to publish more soon—across a broader range of topics.
+
+{{< callout type="info" >}}
+  **Update 2025-11-20**: I’ve reverted the addition of the “Tech” category to keep the blog simpler to navigate.
+{{< /callout >}}

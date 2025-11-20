@@ -1,8 +1,6 @@
 ---
 date: '2024-12-31T10:23:09+01:00'
 title: 'Overcoming Perfectionism'
-categories:
-  - tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'

@@ -1,8 +1,6 @@
 ---
 date: '2025-07-30T21:04:34+02:00'
 title: 'Fixing My Linux Webcam to Look Alive in Meetings'
-categories:
-  - Tech
 authors:
   - name: 'Fabien Dubosson'
     image: '/images/fabiendubosson.jpg'
