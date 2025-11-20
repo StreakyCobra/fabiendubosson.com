@@ -1,5 +1,5 @@
 module github.com/StreakyCobra/fabiendubosson.com
 
-go 1.25.3
+go 1.25.4
 
 require github.com/imfing/hextra v0.11.1 // indirect
